@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    height: 80px;
+    background-color: #79111e;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav {
+    display: flex;
+    gap: 32px;
+}
+#login {
+    text-align: center; /* Alinha o conteúdo no centro da div */
+    margin: 20px auto; /* Margem para centralizar verticalmente e espaçamento nas laterais */
+    max-width: 300px; /* Define a largura máxima da div */
+    padding: 20px; /* Espaçamento interno para o formulário */
+    background-color: #f0f0f0; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.login-título {
+    margin-top: 0; /* Remove a margem superior do título */
+    color: #79111e;
+}
+
+/* Estilize os campos de entrada de texto dentro do formulário, se desejar */
+#login input[type="text"],
+#login input[type="password"] {
+    width: 90%; /* Expande os campos para preencher a largura da div */
+    margin: 10px 0; /* Espaçamento entre os campos */
+    padding: 10px; /* Espaçamento interno nos campos */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 5px; /* Borda arredondada */
+}
+.img-1 {
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(192, 157, 4);
+    color: white;
+    margin: 40px auto;
+    background-image: url(imgs/img1.webp);
+    border-radius: 10px;
+}
+#texto {
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 400px;
+    font-weight: 600;
+}
+#texto-title {
+    font-size: 37px;
+}
+.button {
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 1px white;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+    font-weight: 700;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #79111e;
+}
+.img-2 {
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(192, 157, 4);
+    color: white;
+    margin: 40px auto;
+    background-image: url(imgs/img2.webp);
+    border-radius: 10px;
+}
+.img-3 {
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(192, 157, 4);
+    color: white;
+    margin: 40px auto;
+    background-image: url(imgs/img3.webp);
+    border-radius: 10px;
+}.img-4 {
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(192, 157, 4);
+    color: white;
+    margin: 40px auto;
+    background-image: url(imgs/img5.webp);
+    border-radius: 10px;
+}
+#texto-2 {
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 200px;
+    font-weight: 600;
+}
+#texto-3 {
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+#texto-4 {
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 400px;
+    font-weight: 600;
+    color:white;
+}
+#comprar {
+    text-align: center;
+    height: 300px;
+    background-color: #79111e;
+    color: white;
+    padding: 20px;
+}
+
