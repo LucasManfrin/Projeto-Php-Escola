@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica as credenciais (isso é apenas um exemplo, não use assim em um ambiente real)
     if ($username == "123" && $password == "123") {
         // Login bem-sucedido, redireciona para a página principal ou realiza outras ações necessárias
-        header("Location: index.php");
+        header("Location: pagina_compra.php");
         exit();
     } else {
         // Credenciais inválidas, exibe uma mensagem de erro (também é um exemplo, em um ambiente real, você não deve revelar informações sensíveis)
