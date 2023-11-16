@@ -11,7 +11,6 @@
 </head>
 <body>
     <h1>SELECIONE OS ITEMS</h1>
-    <?php echo $mensagem; // Exibir a mensagem ?>
     <form action="processa_formulario.php" method="post">
         <label for="brahma">Brahma - R$5,00</label>
         <input type="number" name="brahma" id="brahma">
