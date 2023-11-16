@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hora_clicou = date("Y-m-d H:i:s");
 
     // Inserir dados no banco de dados com a hora e valor total
-    $sql = "INSERT INTO consulta_cervejas (brahma, skol, hora_clicou, valor_total) VALUES ('$quantidade_brahma', '$quantidade_skol', '$hora_clicou', '$valor_total')";
+    $sql = "INSERT INTO consulta_cervejas (brahma, skol, hora_pedido, valor_pedido) VALUES ('$quantidade_brahma', '$quantidade_skol', '$hora_clicou', '$valor_total')";
 
     if ($conn->query($sql) === TRUE) {
         $mensagem = "Dados inseridos com sucesso!";
