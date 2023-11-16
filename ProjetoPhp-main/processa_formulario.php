@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+
 // Conectar ao banco de dados (substitua os valores conforme necessário)
 $servername = "localhost";
 $username = "root";
@@ -23,8 +24,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $quantidade_brahma = $_POST['brahma'];
     $quantidade_skol = $_POST['skol'];
 
-    // Inserir dados no banco de dados
-    $sql = "INSERT INTO cervejas (brahma, skol) VALUES ('$quantidade_brahma', '$quantidade_skol')";
+    // Preços das cervejas
+    $preco_brahma = 5.00;
+    $preco_skol = 3.00;
+
+    // Calcular o valor total do pedido
+    $valor_total = ($quantidade_brahma * $preco_brahma) + ($quantidade_skol * $preco_skol);
+
+    // Incluir a hora no formato Y-m-d H:i:s
+    $hora_clicou = date("Y-m-d H:i:s");
+
+    // Inserir dados no banco de dados com a hora e valor total
+    $sql = "INSERT INTO cervejas (brahma, skol, hora_clicou, valor_total) VALUES ('$quantidade_brahma', '$quantidade_skol', '$hora_clicou', '$valor_total')";
 
     if ($conn->query($sql) === TRUE) {
         $mensagem = "Dados inseridos com sucesso!";

@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h2 class="título">Ambev</h2>
+        <h2 class="título">Deer</h2>
         <nav class="nav">
             <a href="#">Empresa</a>
             <a href="#">Contato</a>
@@ -23,7 +23,7 @@
         </div>
         <div class="img-2">
             <div id="texto-2">
-            <h2 id="texto-title">SOBRE A AMBEV</h2>
+            <h2 id="texto-title">SOBRE A DEER</h2>
             <p>A construção de um Grande Sonho</p>
             <button class="button">SAIBA MAIS</button>
             </div>

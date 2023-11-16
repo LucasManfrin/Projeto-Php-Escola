@@ -17,8 +17,6 @@
         <label for="skol">Skol - R$3,00</label>
         <input type="number" name="skol" id="skol">
         <button id="enviar" type="submit">ENVIAR</button>
-        <button type="button" onclick="total()" id="somar">SOMAR</button>
-        <span></span>
     </form>
     <script src="scripts_pagina_compra.js"></script>
 </body>
