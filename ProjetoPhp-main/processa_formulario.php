@@ -32,7 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $valor_total = ($quantidade_brahma * $preco_brahma) + ($quantidade_skol * $preco_skol);
 
     // Incluir a hora no formato Y-m-d H:i:s
-    $hora_clicou = date("Y-m-d H:i:s");
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $hora_clicou = date("d-m-Y H:i:s");
 
     // Inserir dados no banco de dados com a hora e valor total
     $sql = "INSERT INTO consulta_cervejas (brahma, skol, hora_pedido, valor_pedido) VALUES ('$quantidade_brahma', '$quantidade_skol', '$hora_clicou', '$valor_total')";
