@@ -131,9 +131,18 @@ a{
 }
 #comprar {
     text-align: center;
-    height: 300px;
+    height: 350px;
     background-color: #79111e;
     color: white;
     padding: 20px;
 }
-
+.login-novaconta {
+    color: #79111e;
+}
+.login-contanova{
+color: #79111e;
+}
+.login-contanova:hover {
+color: blue;
+cursor: pointer;
+}

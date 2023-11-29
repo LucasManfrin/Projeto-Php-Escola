@@ -50,6 +50,7 @@
                     <input type="text" placeholder="Username" name="username" id="username" required>
                     <input type="password" placeholder="Password" name="password" id="password" required>
                     <input type="submit" value="Login">
+                    <p class="login-novaconta">Não tem uma conta? <a class="login-contanova" href="cadastro.html">Crie uma agora!</a></p>
                 </form>
             </div>
         </div>

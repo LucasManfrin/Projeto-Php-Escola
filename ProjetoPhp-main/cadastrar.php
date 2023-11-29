@@ -18,20 +18,21 @@ try {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $username = $_POST["username"];
         $password = $_POST["password"];
+        $confirm_password = $_POST["confirm_password"];
 
-        // Prepara a consulta SQL para verificar o login
-        $query = $pdo->prepare("SELECT * FROM usuarios WHERE username = :username AND password = :password");
-        $query->bindParam(':username', $username);
-        $query->bindParam(':password', $password);
-
-        // Executa a consulta
-        $query->execute();
-
-        // Verifica se o login é bem-sucedido
-        if ($query->rowCount() > 0) {
-            echo "Login bem-sucedido!";
+        // Verifica se as senhas coincidem
+        if ($password != $confirm_password) {
+            echo "As senhas não coincidem. Tente novamente.";
         } else {
-            echo "Credenciais inválidas. Tente novamente.";
+            // Prepara a consulta SQL para inserir um novo usuário
+            $query = $pdo->prepare("INSERT INTO usuarios (username, password) VALUES (:username, :password)");
+            $query->bindParam(':username', $username);
+            $query->bindParam(':password', $password);
+
+            // Executa a consulta
+            $query->execute();
+
+            echo "Cadastro bem-sucedido!";
         }
     }
 } catch (PDOException $e) {
