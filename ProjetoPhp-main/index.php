@@ -10,8 +10,8 @@
     <header>
         <h2 class="título">Deer</h2>
         <nav class="nav">
-            <a href="#">Empresa</a>
-            <a href="#">Contato</a>
+            <a class="nav-a" href="#">Empresa</a>
+            <a class="nav-a" href="#">Contato</a>
         </nav>
     </header>
         <div class="img-1">

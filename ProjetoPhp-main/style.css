@@ -11,37 +11,36 @@ header {
     align-items: center;
     color: white;
 }
-a{
-    text-decoration: none;
+.nav-a{
     color: white;
+    text-decoration: none;
 }
 .nav {
     display: flex;
     gap: 32px;
 }
 #login {
-    text-align: center; /* Alinha o conteúdo no centro da div */
-    margin: 20px auto; /* Margem para centralizar verticalmente e espaçamento nas laterais */
-    max-width: 300px; /* Define a largura máxima da div */
-    padding: 20px; /* Espaçamento interno para o formulário */
-    background-color: #f0f0f0; /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda com cor cinza */
-    border-radius: 5px; /* Borda arredondada */
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 300px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
 .login-título {
-    margin-top: 0; /* Remove a margem superior do título */
+    margin-top: 0; 
     color: #79111e;
 }
 
-/* Estilize os campos de entrada de texto dentro do formulário, se desejar */
 #login input[type="text"],
 #login input[type="password"] {
-    width: 90%; /* Expande os campos para preencher a largura da div */
-    margin: 10px 0; /* Espaçamento entre os campos */
-    padding: 10px; /* Espaçamento interno nos campos */
-    border: 1px solid #ccc; /* Borda com cor cinza */
-    border-radius: 5px; /* Borda arredondada */
+    width: 90%; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .img-1 {
     width: 1000px;
@@ -133,16 +132,15 @@ a{
     text-align: center;
     height: 350px;
     background-color: #79111e;
-    color: white;
     padding: 20px;
+    color: white;
 }
 .login-novaconta {
     color: #79111e;
 }
-.login-contanova{
-color: #79111e;
+.login-contanova {
+    color: #0066ff;
 }
 .login-contanova:hover {
-color: blue;
-cursor: pointer;
+    color: #79111e;
 }
