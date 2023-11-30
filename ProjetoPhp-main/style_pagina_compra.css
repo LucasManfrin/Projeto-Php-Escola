@@ -1,4 +1,4 @@
-/* style_pagina_compra.css */
+
 
 body {
     padding: 0;
@@ -16,8 +16,8 @@ h1 {
 form {
     max-width: 400px;
     margin: 0 auto;
-    border: 2px solid #ddd; /* Borda cinza */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 2px solid #ddd; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -44,7 +44,7 @@ input::-webkit-inner-spin-button {
 
 input:focus {
     outline: none;
-    border: 1px solid #fff; /* Adicione um contorno branco quando o campo estiver em foco */
+    border: 1px solid #fff; 
 }
 
 span {
@@ -55,7 +55,7 @@ span {
     color: white;
 }
 
-/* Estilo para o button */
+
 #somar {
     background-color: white;
     color: black;
@@ -82,8 +82,8 @@ span {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin: 10px auto; /* Centraliza o botão horizontalmente */
-    display: block; /* Garante que o margin funcione corretamente */
+    margin: 10px auto; 
+    display: block; 
     border-radius: 5px;
     transition: all 0.5s;
 }
