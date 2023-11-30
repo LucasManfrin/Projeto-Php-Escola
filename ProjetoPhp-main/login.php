@@ -29,7 +29,8 @@ try {
 
         // Verifica se o login é bem-sucedido
         if ($query->rowCount() > 0) {
-            echo "Login bem-sucedido!";
+            header('Location: pagina_compra.php');
+            exit();
         } else {
             echo "Credenciais inválidas. Tente novamente.";
         }

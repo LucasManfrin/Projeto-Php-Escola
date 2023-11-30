@@ -15,8 +15,7 @@ if ($conn->connect_error) {
     die("Erro de conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Inicializar variáveis para as mensagens
-$mensagem = '';
+
 
 // Verificar se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -39,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO consulta_cervejas (brahma, skol, hora_pedido, valor_pedido) VALUES ('$quantidade_brahma', '$quantidade_skol', '$hora_clicou', '$valor_total')";
 
     if ($conn->query($sql) === TRUE) {
-        $mensagem = "Dados inseridos com sucesso!";
+        echo "Dados inseridos com sucesso!";
     } else {
-        $mensagem = "Erro ao inserir dados: " . $conn->error;
+        echo "Erro ao inserir dados: " . $conn->error;
     }
 }
 
